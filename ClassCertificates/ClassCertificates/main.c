@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
 
 void congratulateStudent(char *student, char *course, int numDays)
 {
@@ -17,8 +18,11 @@ int main (int argc, const char * argv[])
 {
     // insert code here...
     congratulateStudent("Mark", "Cocoa",       5);
+    sleep(2);
     congratulateStudent("Bo",   "Objective-C", 2);
+    sleep(2);
     congratulateStudent("Mike", "Python",      5);
+    sleep(2);
     congratulateStudent("Ted",  "iOS",         5);
     
     return 0;
