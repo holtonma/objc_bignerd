@@ -9,8 +9,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// declare a static (only accessible by fn's within this file, main.c
+static float lastTempConverted = 50;
+
 float convertToCelcius(int degC)
 {
+    lastTempConverted = degC;
     float degF = 1.8 * degC + 32;
     return degF;
 }
