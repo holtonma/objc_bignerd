@@ -11,8 +11,14 @@
 
 void cartesianToPolar(float x, float y, double *rPtr, double *thetaPtr){
     // Store the radius in the supplied address
-    *rPtr = sqrt(x*x + y*y);
-    
+    if (rPtr){ // make sure Pointers are not null
+        *rPtr = sqrt(x*x + y*y);
+    }
+    // is thetaPtr NULL?
+    if (!thetaPtr){
+        // skip rest of fn
+        return;
+    }
     // calculate theta:
     float theta;
     if (x == 0.0){
