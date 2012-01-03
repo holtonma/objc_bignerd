@@ -15,6 +15,7 @@ int main (int argc, const char * argv[])
     // insert code here...
     printf("i stores its value at %p\n", addressOfI);
     printf("this function starts at %p\n", main);
+    printf("the int stored at addressOfI is %d\n", *addressOfI);
     return 0;
 }
 
