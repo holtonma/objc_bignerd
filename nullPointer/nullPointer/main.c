@@ -10,16 +10,15 @@
 
 int main (int argc, const char * argv[])
 {
-    // insert code here...
     float *myPointer;
-    // set myPointer to NULL for now, I'll store a pointer there
-    myPointer = NULL;
-    // Has myPointer been set?
-    if (myPointer){
-      // myPointer is not NULL
-    } else {
-      // myPointer is NULL
-    }
+    printf("how much memory a float consumes: %zu bytes \n", sizeof(*myPointer));
+    printf("how much memory a float pointer consumes: %zu bytes \n", sizeof(myPointer));
+    
+    short test;
+    test = -9999;
+    printf("smallest short int: %d \n", test);
+    unsigned short test2 = 9999;
+    printf("largest unsigned short int: %d \n", test2);
     return 0;
 }
 
